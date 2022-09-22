@@ -1,0 +1,130 @@
+.post{
+  background: var(--gray-800);
+  border-radius: 8px;
+  padding: 2.5rem;
+}
+
+.post + .post{
+  margin-top: 2rem;
+}
+
+.post > header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post > header time{
+  font-size: 0.875rem;
+  color: var(--gray-400)
+}
+
+.author{
+  display: flex;
+  align-items: center;
+}
+
+.author .authorInfo{
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.author .authorInfo strong{
+  color: var(--gray-100);
+  line-height: 1.6;
+}
+
+.author .authorInfo span{
+  color: var(--gray-400);
+  line-height: 1.6;
+  font-size: 0.875rem;
+}
+
+.post .content{
+  color: var(--gray-400);
+  margin-top: 1.5rem;
+  line-height: 1.6;
+}
+
+.post .content p{
+  margin-top: 1rem;
+}
+
+.post .content a{
+  line-height: 1.6;
+  color: var(--green-500);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.post .content a:hover{
+  color: var(--green-800);
+}
+
+.commentForm{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  border-top: 1px solid var(--gray-700);
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.commentForm > strong{
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.commentForm textarea{
+  width: 100%;
+  height: 8rem;
+  background: var(--gray-900);
+  border: 0;
+  border-radius: 8px;
+  resize: none;
+  padding: 1rem 0.8125rem;
+  color: var(--gray-500)
+}
+
+.commentForm footer{
+  visibility: hidden;
+  max-height: 0;
+}
+
+.commentForm:focus-within footer{
+  visibility: visible;
+  max-height: none;
+}
+
+.commentForm footer button[type="submit"]{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--green-800);
+  border: 0;
+  color: var(--white);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+
+  transform: background-color 0.1s;
+}
+
+.commentForm footer button[type="submit"]:not(:disabled):hover{
+  background: var(--green-500);
+}
+
+.commentForm footer button[type="submit"]:disabled{
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.commentList{
+  margin-top: 2rem;
+}
