@@ -6,6 +6,7 @@ interface AvatarProps{
   alt?: string;
 }
 
+
 export function Avatar({ hasBorder = true, src, alt }: AvatarProps){
   return(
     <img 

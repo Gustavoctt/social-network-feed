@@ -43,7 +43,6 @@ export function App() {
 
       <div className={styles.container}>
         <Sidebar />
-
         <section>
           { posts.map(post => {
             return (

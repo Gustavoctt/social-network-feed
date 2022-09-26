@@ -1,8 +1,9 @@
-import { Avatar } from '../Avatar/Avatar';
+import { useState } from 'react';
 import { Trash, ThumbsUp } from 'phosphor-react';
 
+import { Avatar } from '../Avatar/Avatar';
+
 import styles from './Comment.module.css';
-import { useState } from 'react';
 
 interface CommentProps{
   content: string;
